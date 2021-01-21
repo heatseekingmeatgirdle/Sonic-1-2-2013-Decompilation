@@ -35,6 +35,7 @@ bld/
 bin/
 [Bb]in/
 [Oo]bj/
+cmake/
 
 #OSX files
 *.DS_Store
@@ -52,11 +53,20 @@ bin/
 *.xcsettings
 
 #dependencies
+[Dd]ependencies/windows-uwp/**
 [Dd]ependencies/windows/*
 [Dd]ependencies/mac/*
 [Dd]ependencies/all/*
 ![Dd]ependencies/all/dependencies.txt
 ![Dd]ependencies/mac/[Ii]nfo.plist
+
+# UWP
+**/Generated Files
+**/BundleArtifacts
+**/AppPackages
+
+# safety
+*.rsdk
 
 # Visual Studio 2015 cache/options directory
 .vs/
